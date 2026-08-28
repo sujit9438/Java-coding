@@ -1,0 +1,18 @@
+package MethodQuestionInLab;
+
+import java.util.Scanner;
+
+public class Question5 {
+
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		String a= sc.nextLine();
+		displayMessage(a);
+	}
+	public static void displayMessage(String name)
+	{
+		System.out.println("Hello "+name);
+	}
+
+}
