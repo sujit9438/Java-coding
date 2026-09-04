@@ -10,7 +10,11 @@ public class Task13 {
 		{
 			for(int j=1;j<=space;j++)
 			{
-				System.out.print();
+				System.out.print("   ");
+			}
+			for(int j=1;j<=star;j++)
+			{
+				System.out.print(" * ");
 			}
 			System.out.println();
 		}

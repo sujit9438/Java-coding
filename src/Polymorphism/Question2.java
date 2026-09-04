@@ -28,7 +28,7 @@ class BikeRide extends Ride
 	}
 	public double calculateFare(double surgeMultiplier)
 	{
-		
+		return 0;
 	}
 	
 }

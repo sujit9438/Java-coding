@@ -4,7 +4,7 @@ public class Task6 {
 
 	public static void main(String[] args) {
 		
-		int i=1;
+		int k=1;
 		
 		for(int i=1;i<=4;i++)
 		{
@@ -17,7 +17,7 @@ public class Task6 {
 
 				if(i%2==0)
 				{
-					System.out.print();
+					System.out.print(" *");
 					
 				}
 				else
