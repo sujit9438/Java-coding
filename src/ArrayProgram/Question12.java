@@ -1,12 +1,11 @@
 package ArrayProgram;
 
-import java.util.Arrays; 
 import java.util.Scanner;
 
-public class Question9 {
+public class Question12 {
 
 	public static void main(String[] args) {
-		
+		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter size");
 		int size=sc.nextInt();
@@ -18,12 +17,17 @@ public class Question9 {
 		{
 			a[i]=sc.nextInt();
 		}
-		int [] b=new int[a.length];
-		for(int i=0;i<a.length;i++)
+		System.out.println("Enter element to search  ");
+		int n=sc.nextInt();
+		int count=0;
+		for(int e :a)
 		{
-			b[i]=a[(a.length-1)-i];
+			if(e==n)
+			{
+				count++;
+			}
 		}
-		System.out.println("Result = "+Arrays.toString(b));
+		System.out.println(n+" apperad "+count+" times");
 	}
 
 }

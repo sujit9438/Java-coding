@@ -20,7 +20,7 @@ public class Question11 {
 		System.out.println("Enter element to search");
 		int target=sc.nextInt();
 		boolean found=false;
-		for(int e:a)
+		for(int e : a)
 		{
 			if(e==target)
 			{

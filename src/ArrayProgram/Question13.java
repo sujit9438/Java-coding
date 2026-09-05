@@ -1,12 +1,12 @@
 package ArrayProgram;
 
-import java.util.Arrays; 
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class Question9 {
+public class Question13 {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) 
+	{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter size");
 		int size=sc.nextInt();
@@ -21,9 +21,9 @@ public class Question9 {
 		int [] b=new int[a.length];
 		for(int i=0;i<a.length;i++)
 		{
-			b[i]=a[(a.length-1)-i];
+			b[i]=a[i];
 		}
-		System.out.println("Result = "+Arrays.toString(b));
+		System.out.println(Arrays.toString(b));
 	}
 
 }
