@@ -1,8 +1,8 @@
-package ArrayProgram;
+package arrayProgramClass;
 
 import java.util.Scanner;
 
-public class Question5 {
+public class Question4 {
 
 	public static void main(String[] args) 
 	{
@@ -10,22 +10,26 @@ public class Question5 {
 		System.out.println("Enter size");
 		int size=sc.nextInt();
 		int [] a= new int[size];
-		
-		System.out.println(" Enter values ");
-		
+		System.out.println("Enter values ");
 		for(int i=0;i<a.length;i++)
 		{
 			a[i]=sc.nextInt();
 		}
-		int largest =a[0];
+		int odd=0;
+		int even=0;
 		for(int e :a)
 		{
-			if(e>largest)
+			if(e%2==0)
 			{
-				largest=e;
+				even++;
+			}
+			else
+			{
+				odd++;
 			}
 		}
-		System.out.println("Largest number is : "+largest);
+		System.out.println("Count of even elements : "+even);
+		System.out.println("Count of odd elements : "+odd);
 	}
 
 }

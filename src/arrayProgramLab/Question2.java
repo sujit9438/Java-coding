@@ -1,9 +1,8 @@
-package ArrayProgram;
+package arrayProgramLab;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Question13 {
+class Question2 {
 
 	public static void main(String[] args) 
 	{
@@ -12,18 +11,27 @@ public class Question13 {
 		int size=sc.nextInt();
 		int [] a= new int[size];
 		
-		System.out.println("Enter values ");
+		System.out.println(" Enter values ");
 		
 		for(int i=0;i<a.length;i++)
 		{
 			a[i]=sc.nextInt();
 		}
-		int [] b=new int[a.length];
-		for(int i=0;i<a.length;i++)
+		int max=a[0];
+		int min=a[0];
+		for(int num:a)
 		{
-			b[i]=a[i];
+			if(num>max)
+			{
+				max=num;
+			}
+			else if(num<min)
+			{
+				min=num;
+			}
+			
 		}
-		System.out.println(Arrays.toString(b));
+		System.out.println("Difference in between :"+(max-min));
 	}
 
 }

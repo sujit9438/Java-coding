@@ -1,4 +1,4 @@
-package ArrayProgram;
+package arrayProgramClass;
 import java.util.Scanner;
 
 public class Question8 {

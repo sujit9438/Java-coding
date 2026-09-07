@@ -1,11 +1,11 @@
-package ArrayProgram;
+package arrayProgramClass;
 
 import java.util.Scanner;
-
-public class Question12 {
+//difference between largest and smallest.
+public class Question16 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter size");
 		int size=sc.nextInt();
@@ -17,17 +17,21 @@ public class Question12 {
 		{
 			a[i]=sc.nextInt();
 		}
-		System.out.println("Enter element to search  ");
-		int n=sc.nextInt();
-		int count=0;
-		for(int e :a)
+		int largest=a[0];
+		int smallest=a[0];
+		for(int num:a)
 		{
-			if(e==n)
+			if(num>largest)
 			{
-				count++;
+				largest=num;
 			}
+			else if(num<smallest)
+			{
+				smallest=num;
+			}
+			
 		}
-		System.out.println(n+" apperad "+count+" times");
+		System.out.println("Difference in between :"+(largest-smallest));
 	}
 
 }

@@ -1,8 +1,8 @@
-package ArrayProgram;
+package arrayProgramClass;
 
 import java.util.Scanner;
 
-public class Question11 {
+public class Question17 {
 
 	public static void main(String[] args) 
 	{
@@ -17,24 +17,22 @@ public class Question11 {
 		{
 			a[i]=sc.nextInt();
 		}
-		System.out.println("Enter element to search");
-		int target=sc.nextInt();
-		boolean found=false;
-		for(int e : a)
+		boolean flag=true;
+		for(int i=0;i<a.length-1;i++)
 		{
-			if(e==target)
+			if(a[i]> a[i+1])
 			{
-				found=true;
+				flag=false;
 				break;
 			}
 		}
-		if(found == true)
+		if(flag)
 		{
-			System.out.println("Array contains the given target");
+			System.out.println("Array is sorted");
 		}
 		else
 		{
-			System.out.println("Array not contains the given target");
+			System.out.println("Array is not sorted");
 		}
 	}
 

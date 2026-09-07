@@ -1,12 +1,10 @@
-package ArrayProgram;
-
-import java.util.Arrays;
+package arrayProgramClass;
+//even index.
 import java.util.Scanner;
 
-public class Question10 {
+public class Question14 {
 
 	public static void main(String[] args) 
-	
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter size");
@@ -19,18 +17,13 @@ public class Question10 {
 		{
 			a[i]=sc.nextInt();
 		}
-		int x=0;
-		int y=a.length-1;
-		while(x<y)
+		for(int i=0;i<a.length;i++)
 		{
-			int temp=a[x];
-			a[x]=a[y];
-			a[y]=temp;
-			x++;
-			y--;
-			
+			if(i%2==0)
+			{
+				System.out.println(a[i]+" ");
+			}
 		}
-		System.out.println("Results is : "+Arrays.toString(a));
 	}
 
 }
