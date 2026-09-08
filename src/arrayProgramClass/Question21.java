@@ -2,7 +2,7 @@ package arrayProgramClass;
 
 import java.util.Scanner;
 
-public class Question19 {
+public class Question21 {
 
 	public static void main(String[] args) 
 	{
@@ -17,29 +17,29 @@ public class Question19 {
 		{
 			a[i]=sc.nextInt();
 		}
-		boolean repeated=false;
+		 boolean noRepeated=false;
 		for(int i=0;i<a.length;i++)
 		{
 			int count=0;
 			for(int j=0;j<a.length;j++)
 			{
-				if(a[j] == a[i])
+				if(a[j]==a[i])
 				{
 					count++;
 				}
-				
 			}
-			if(count>1)
+			if(count==1)
 			{
-				repeated=true;
-				System.out.println("First repeated element is : "+a[i]);
+				noRepeated=true;
+				System.out.println("the first non repeated element is:"+a[i]);
 				break;
 			}
-			if(repeated==false)
-			{
-				System.out.println("No element is repeated");
-				break;
-			}
+			
+		}
+		if(noRepeated==false)
+		{
+			System.out.println("Their are no non repeated element");
+		
 		}
 	}
 
