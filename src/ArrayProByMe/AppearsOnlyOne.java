@@ -15,8 +15,7 @@ public class AppearsOnlyOne {
 		System.out.println("Enter Array Element One by One");
 		for(int i=0;i<a.length;i++)
 		{
-			a[i]=sc.nextInt();
-	
+			a[i]=sc.nextInt(); 
 		}
 		
 		for(int i=0;i<a.length;i++)

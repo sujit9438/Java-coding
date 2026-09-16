@@ -1,8 +1,8 @@
 package whileLoop;
 
-import java.util.Scanner;
 
-import sun.jvm.hotspot.tools.SysPropsDumper;
+
+import java.util.Scanner;
 
 public class HCFOfTwoNumber {
 
