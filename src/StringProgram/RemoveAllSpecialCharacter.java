@@ -2,7 +2,7 @@ package StringProgram;
 
 import java.util.Scanner;
 
-public class RemoveDuplicates {
+public class RemoveAllSpecialCharacter {
 
 	public static void main(String[] args) 
 	{
@@ -12,13 +12,13 @@ public class RemoveDuplicates {
 		String result="";
 		for(int i=0;i<a.length();i++)
 		{
-			char ch =a.charAt(i);
-			if(!result.contains(""+ch))
+			char ch=a.charAt(i);
+			if((ch>='0' && ch<='9') || (ch>='A' && ch<='Z') || (ch>='a' && ch<='z'))
 			{
 				result+=ch;
 			}
 		}
-		System.out.println("Result : "+result);
+		System.out.println("Result is : "+result);
 	}
 
 }

@@ -2,7 +2,7 @@ package StringProgram;
 
 import java.util.Scanner;
 
-public class RemoveDuplicates {
+public class FindDuplicate {
 
 	public static void main(String[] args) 
 	{
@@ -10,15 +10,21 @@ public class RemoveDuplicates {
 		System.out.println("Enter a String");
 		String a=sc.nextLine();
 		String result="";
+		System.out.println("Duplicate charcater is : ");
 		for(int i=0;i<a.length();i++)
 		{
-			char ch =a.charAt(i);
-			if(!result.contains(""+ch))
-			{
-				result+=ch;
-			}
+			char ch=a.charAt(i);
+				if(!result.contains(""+ch))
+				{
+					result+=ch;
+				}
+				else
+				{
+					System.out.print(ch+" ");
+				}
+			
 		}
-		System.out.println("Result : "+result);
+		
 	}
 
 }
