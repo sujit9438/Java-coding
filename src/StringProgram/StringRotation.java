@@ -15,11 +15,11 @@ public class StringRotation {
 		
 		if((s+v).contains(v))
 		{
-			System.out.println("Same String");
+			System.out.println(v+" is the rotation of "+s);
 		}
 		else
 		{
-			System.out.println("Not same String");
+			System.out.println(v+" is not roation of "+s);
 		}
 		
 	}
