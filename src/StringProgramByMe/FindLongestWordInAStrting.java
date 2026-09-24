@@ -20,9 +20,12 @@ public class FindLongestWordInAStrting {
 
                 currentWord = currentWord + ch;
 
-            } else {
+            } 
+            else 
+            {
 
-                if (currentWord.length() > longestWord.length()) {
+                if (currentWord.length() > longestWord.length()) 
+                {
 
                     longestWord = currentWord;
                 }
