@@ -22,6 +22,39 @@ public class ArrayOfReference
 			a[i] = new Book(authoreName,title,price,publishedYear);
 			 
 		}
+		System.out.println("==================================");
+		System.out.println("Enter 1 for getting details of the book by author");
+		System.out.println("Enter 2 for getting details of the book published after a year ");
+		System.out.println("Enter 3 for getting average price ");
+		System.out.println("===================================");
+		int choice=sc.nextInt();
+		switch(choice)
+		{
+			case 1->
+			{
+				sc.nextLine();
+				System.out.println("Enter the author name ");
+				String authorName=sc.nextLine();
+				BooksByAuthor(authorName);
+			}
+			case 2->
+			{
+				System.out.println("Enter a year ");
+				int year=sc.nextInt();
+				booksPublishAfterCertaimYear(year);
+			}
+			case 3->
+			{
+				avgPriceOfBooks();
+			}
+			default->
+			{
+				System.out.println("Enter a valid choice ");
+			}
+		}
+		
+		
+		
 //		System.out.println("Available books are : ");
 //		for(Book b:a)
 //		{
@@ -49,6 +82,15 @@ public class ArrayOfReference
 				System.out.println("===============================");
 			}
 		}
+	}
+	public static void avgPriceOfBooks()
+	{
+		int sum=0;
+		for(Book b:a)
+		{
+			sum+=b.price;
+		}
+		System.out.println("Average price : "+(sum/a.length));
 	}
 
 }
