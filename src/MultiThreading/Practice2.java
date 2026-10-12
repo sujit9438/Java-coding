@@ -30,8 +30,8 @@ class MyRunnable3 implements Runnable
 		System.out.println("t1 waits for main thread to got terminated");
 		try 
 		{
-			mt.join();
-			for(int i=101;i<=200;i++)
+			 mt.join();
+			 for(int i=101;i<=200;i++)
 			{
 				System.out.println(i);
 			}
